@@ -17,3 +17,4 @@ extractMeanSD <- function(reading)
   
   return(reading[meansAndStdCols])
 }
+
