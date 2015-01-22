@@ -51,7 +51,11 @@ run_analysis <- function()
   
   names(activityLabelMap) <- c("act_id" , "activity_name")
   all_readings_with_actLabel <- merge(all_readings,activityLabelMap);
+  applyPrettyNames(all_readings_with_actLabel);
 
   
   #Take averages
+  
+  tidy_data_averages <- aggregate(all_readings_with_actLabel,by=list(all_readings_with_actLabel$activity_name,all_readings_with_actLabel$sub_id),mean)
+  print(dim(tidy_data_averages))
 }
