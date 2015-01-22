@@ -65,7 +65,7 @@ run_analysis <- function()
   
   #Take averages
   print("taking averages");
-  tidy_data_averages <- aggregate(all_readings_with_actLabel[,c(2:67)],by=list(all_readings_with_actLabel$activity_name,all_readings_with_actLabel$sub_id),mean)
+  tidy_data_averages <- aggregate(all_readings_with_actLabel[,c(2:67)],by=list(activity_name=all_readings_with_actLabel$activity_name,subject=all_readings_with_actLabel$sub_id),mean)
   
   #Write to file
   print("writing to file");
