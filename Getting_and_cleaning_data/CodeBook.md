@@ -2,10 +2,15 @@
 The tidy dataset contains averages of the observation of activity per subject.
 There are total 6 activities namely
 >WALKING
+
 >WALKING_UPSTAIRS
+
 >WALKING_DOWNSTAIRS
+
 >SITTING
+
 >STANDING
+
 >LAYING
 
 
