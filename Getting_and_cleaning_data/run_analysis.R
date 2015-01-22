@@ -69,6 +69,6 @@ run_analysis <- function()
   
   #Write to file
   print("writing to file");
-  write.table(tidy_data_averages,file="tidy_data.txt",row.names=FALSE);
+  write.table(tidy_data_averages,file="tidy_data2.txt",row.names=FALSE);
   
 }
