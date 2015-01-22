@@ -92,6 +92,6 @@ applyPrettyNames <- function(reading)
     
   }
   
-  names(reading) <- allNewNames;
+  return(allNewNames);
 }
 
