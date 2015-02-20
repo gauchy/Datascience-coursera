@@ -8,7 +8,7 @@ plot1 <- function()
   
   #In Million Tons
   sumByYear <- sumByYear/1000000
-  barplot(sumByYear,col="red",ylab="Emissions in Million Ton",main="PM2.5 from all sources");
+  barplot(sumByYear,col="red",ylab="Emissions in Million Ton",main="National PM2.5 emissions from all sources");
   
   dev.copy(png,file="plot1.png")
   dev.off()
