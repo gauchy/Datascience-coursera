@@ -9,8 +9,9 @@ plot3 <- function()
   emissionsByYearType <- aggregate(Emissions ~ year + type, data = BaltimoreEI, sum)
   g <- ggplot(emissionsByYearType,aes(year,Emissions))
   
-  #Removed outliers by setting the ylim to 300
-  g <- g + geom_point() + geom_smooth(method="lm",se=T) +facet_grid(.~type) 
+
+  g <- g + geom_point() + geom_smooth(method="lm",se=T) +facet_grid(.~type) +labs(y="PM2.5 emission in tonnes")
+  g <- g + ggtitle("Balitmore City : Emission from different types")
   print(g)
   
   dev.copy(png,file="plot3.png",width=880,height=480)
