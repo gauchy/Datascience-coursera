@@ -11,7 +11,7 @@ plot3 <- function()
   g <- g + geom_point(alpha="0.2") + geom_smooth(method="lm",se=T) +facet_grid(.~type) + coord_cartesian(ylim=c(0,300));
   print(g)
   
-  dev.copy(png,file="plot3.png")
+  dev.copy(png,file="plot3.png",width=880,height=480)
   dev.off()
 
   
